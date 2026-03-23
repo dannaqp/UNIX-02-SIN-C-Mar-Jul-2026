@@ -418,3 +418,7 @@ Am�&�gң�����Ds��ts,��e����*�)�R����!E
 ���
 �_JL�(F�5*
 �Jocr�ܹ��* (M��^>?2`C�|c�*�R�?j��q���5�x ��������(���i�xr�!��eܟj�(�7`0~k�n�#�\��0=_�]n   ��M��R~�F���6=%��h/���5MSt����  �NSG����B�2����ֽ�گ1u��}�Mu�L��Zm�c�KP4��x�d~6f)��u?1�
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --decrypt marida_doc_cifrado.txt # After upolad the encrypted file that Cami send to me, with this comand I can decrypt her file with her public key and see their content 
+gpg: encrypted with rsa4096 key, ID AC240ACED367542D, created 2026-03-20
+      "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>"
+Hola dannitaaaaaaaa
