@@ -409,3 +409,12 @@ in the user ID.  If you *really* know what you are doing,
 you may answer the next question with yes.
 
 Use this key anyway? (y/N) y
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_cifrado.txt # Now with this comand I can see the encrypted file and what it contains
+�
+ �ޟ�a��IX�
+Am�&�gң�����Ds��ts,��e����*�)�R����!E����寈N.�G�\<`9��9�Ѻ�AVʔ�C<s2�����s�w�ql\|�: ��)�#4s�.1M���]�#��uF��R
+�^��]o3���&��V���K��㚒�B�5}q�u��Tx���(vd��Ӫ�\�W
+���
+�_JL�(F�5*
+�Jocr�ܹ��* (M��^>?2`C�|c�*�R�?j��q���5�x ��������(���i�xr�!��eܟj�(�7`0~k�n�#�\��0=_�]n   ��M��R~�F���6=%��h/���5MSt����  �NSG����B�2����ֽ�گ1u��}�Mu�L��Zm�c�KP4��x�d~6f)��u?1�
