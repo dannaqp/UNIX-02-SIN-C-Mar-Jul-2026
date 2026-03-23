@@ -393,3 +393,7 @@ pub   rsa4096 2026-03-23 [SC] [expires: 2027-03-23]
       C0940405536BDA498D561C15BCE14E7DCA73AB9B
 uid           [ unknown] Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com>
 sub   rsa4096 2026-03-23 [E] [expires: 2027-03-23]
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ echo "Hola Cami t amo" > doc_no_cifrado.txt # This comand create a file named doc_no_cifrado.txt with "Hola Cami t amo" 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_no_cifrado.txt # With cat I can see the text in my file
+Hola Cami t amo
