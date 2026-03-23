@@ -422,3 +422,27 @@ Am�&�gң�����Ds��ts,��e����*�)�R����!E
 gpg: encrypted with rsa4096 key, ID AC240ACED367542D, created 2026-03-20
       "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>"
 Hola dannitaaaaaaaa
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt # With this comand I can sign my no encrypted file and I can have a new file signed with a new name 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_no_cifrado_firmado.txt # With this comand I can see the content of my new file with my sign
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Hola Cami t amo
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEKBQBdv8qmK0HeuIPHwyFf8B2YC8FAmnBX8kACgkQHwyFf8B2
+YC8JUg/7BWNCUqL9u+57AjxSx0UHGe6mk7ttF17poJeA4CPwWiyyygaiR2tvHNHF
+gULq1m8SREkpb2PIlwgjeiMbzRqtCOxUhCGylzYt3mRw84EbL0UnT+eY0USAJ+LI
+g6G5LQjdngrw58fDl9dCNIhm5vmDBATRHWSqzKvh9Hh1MoNbeeTRUmK2vn9CKn5D
+BALWBxxedwstosOjAMagKd5ijKUPIKYHf7+qfW0ruQJ/Q6gOus7D3H/08Fzz7V0W
++EQcTUA6LwYDUnsFce9KrMP4Hzh4gULLch+TpGVtez/DLckbtIRKlf0GZ6OyQ7h/
+YuG28b1mfCs2OYEV3ZXBuyNsD+nAe0JaEApiFoqmFuQT07ybAULB8dmD2F3zX54A
+Xd9nIUGb/W6DeU+NMqSrvmTfamKGq+yoKrP6Fnbv8tG4vKTDZS2ko+hMJ+9lWQqO
+LH2pnSDu1p0mkg3hv7HsLjos+5rrYT6NYSPEb+/odp8eIXsldNmu6YrERMPllNxT
+pqHEWuawqIe4kfLS/fPDwX1C2KBXWlBIVhK+ckNY0RaoFlT5hyeyw4jPw4rVrIJW
+7YhhaRNhbmywdSMbeXo4AqbDhWkVwU6pLrFxGq+Ehy1KHkqNl++7KWUxgKxofgsF
+Hv9NdfWEjivvPGcziNIlvQY8PHGhbQUGck2cTsiiLRBfk0PDgTs=
+=aD+v
+-----END PGP SIGNATURE-----
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ 
