@@ -397,3 +397,15 @@ sub   rsa4096 2026-03-23 [E] [expires: 2027-03-23]
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ echo "Hola Cami t amo" > doc_no_cifrado.txt # This comand create a file named doc_no_cifrado.txt with "Hola Cami t amo" 
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_no_cifrado.txt # With cat I can see the text in my file
 Hola Cami t amo
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_cifrado.txt --encrypt --recipient C0940405536BDA498D561C15BCE14E7DCA73AB9B doc_no_cifrado.txt # With this comand I encrypt the no encrypted file with the Cami's hash
+gpg: EC071FDE9F8261CE: There is no assurance this key belongs to the named user
+
+sub  rsa4096/EC071FDE9F8261CE 2026-03-23 Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com>
+ Primary key fingerprint: C094 0405 536B DA49 8D56  1C15 BCE1 4E7D CA73 AB9B
+      Subkey fingerprint: 1A79 08FE 5250 6071 9A35  D445 EC07 1FDE 9F82 61CE
+
+It is NOT certain that the key belongs to the person named
+in the user ID.  If you *really* know what you are doing,
+you may answer the next question with yes.
+
+Use this key anyway? (y/N) y
