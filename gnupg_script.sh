@@ -244,3 +244,10 @@ KNXTQ02D1fI/849MAhqYAgt2xUD7Um1fb6G3
 =gTTG
 -----END PGP PUBLIC KEY BLOCK-----
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys # this comand list the keys in my key ring
+/home/codespace/.gnupg/pubring.kbx
+----------------------------------
+pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
+      28140176FF2A98AD077AE20F1F0C857FC076602F
+uid           [ultimate] DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
+sub   rsa4096 2026-03-20 [E] [expires: 2027-03-20]
