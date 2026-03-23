@@ -251,3 +251,10 @@ pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
       28140176FF2A98AD077AE20F1F0C857FC076602F
 uid           [ultimate] DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
 sub   rsa4096 2026-03-20 [E] [expires: 2027-03-20]
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-secret-keys --keyid-format=long # this comand list my secret key
+/home/codespace/.gnupg/pubring.kbx
+----------------------------------
+sec   rsa4096/1F0C857FC076602F 2026-03-20 [SC] [expires: 2027-03-20]
+      28140176FF2A98AD077AE20F1F0C857FC076602F
+uid                 [ultimate] DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
+ssb   rsa4096/AC240ACED367542D 2026-03-20 [E] [expires: 2027-03-20]
