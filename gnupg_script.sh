@@ -445,4 +445,25 @@ pqHEWuawqIe4kfLS/fPDwX1C2KBXWlBIVhK+ckNY0RaoFlT5hyeyw4jPw4rVrIJW
 Hv9NdfWEjivvPGcziNIlvQY8PHGhbQUGck2cTsiiLRBfk0PDgTs=
 =aD+v
 -----END PGP SIGNATURE-----
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --import marida_llave_publica.asc # With this comand I'm adding Cami's new key for the next step
+gpg: key 2DB5E37DF317D30F: public key "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys # With this comand I can see my key ring
+/home/codespace/.gnupg/pubring.kbx
+----------------------------------
+pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
+      28140176FF2A98AD077AE20F1F0C857FC076602F
+uid           [ultimate] DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
+sub   rsa4096 2026-03-20 [E] [expires: 2027-03-20]
+
+pub   rsa4096 2026-03-23 [SC] [expires: 2027-03-23]
+      C0940405536BDA498D561C15BCE14E7DCA73AB9B
+uid           [ unknown] Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com>
+sub   rsa4096 2026-03-23 [E] [expires: 2027-03-23]
+
+pub   rsa4096 2026-03-26 [SC] [expires: 2027-03-26]
+      88A7487A82842216C00562222DB5E37DF317D30F
+uid           [ unknown] Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
+sub   rsa4096 2026-03-26 [E] [expires: 2027-03-26]
+
