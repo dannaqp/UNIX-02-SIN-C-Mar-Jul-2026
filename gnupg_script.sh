@@ -244,21 +244,21 @@ KNXTQ02D1fI/849MAhqYAgt2xUD7Um1fb6G3
 =gTTG
 -----END PGP PUBLIC KEY BLOCK-----
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ 
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys # this comand list the keys in my key ring
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys # this command list the keys in my key ring
 /home/codespace/.gnupg/pubring.kbx
 ----------------------------------
 pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
       28140176FF2A98AD077AE20F1F0C857FC076602F
 uid           [ultimate] DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
 sub   rsa4096 2026-03-20 [E] [expires: 2027-03-20]
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-secret-keys --keyid-format=long # this comand list my secret key
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-secret-keys --keyid-format=long # this command list my secret key
 /home/codespace/.gnupg/pubring.kbx
 ----------------------------------
 sec   rsa4096/1F0C857FC076602F 2026-03-20 [SC] [expires: 2027-03-20]
       28140176FF2A98AD077AE20F1F0C857FC076602F
 uid                 [ultimate] DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
 ssb   rsa4096/AC240ACED367542D 2026-03-20 [E] [expires: 2027-03-20]
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor --export-secret-keys 1F0C857FC076602F # this comand exports my secret key using the hash 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --armor --export-secret-keys 1F0C857FC076602F # this command exports my secret key using the hash 
 -----BEGIN PGP PRIVATE KEY BLOCK-----
 
 lQdGBGm9avsBEADGCNN0RFBiuKY5vH8DZWH3Ws/+1r0oNP1zOl+vW6VOcJOo3ocZ
@@ -368,7 +368,7 @@ sDiD8q1SA6Y/hNpeRMMzx3kSXRYVt+l/uh83AeNTRbJaiCjV00NNg9XyP/OPTAIa
 mAILdsVA+1JtX2+htw==
 =oWgk
 -----END PGP PRIVATE KEY BLOCK-----
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys # this comand list the keys in my key ring
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys # this command list the keys in my key ring
 /home/codespace/.gnupg/pubring.kbx
 ----------------------------------
 pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
@@ -376,12 +376,12 @@ pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
 uid           [ultimate] DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>
 sub   rsa4096 2026-03-20 [E] [expires: 2027-03-20]
 
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --import marida_llave_publica.asc # this comand imports the Cami's key that is in the file marida_llave_publica.asc
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --import marida_llave_publica.asc # this command imports the Cami's key that is in the file marida_llave_publica.asc
 gpg: key BCE14E7DCA73AB9B: public key "Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com>" imported
 gpg: Total number processed: 1
 gpg:               imported: 1
 
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys # This comand show all of my visible keys and Cami's key
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys # This command show all of my visible keys and Cami's key
 /home/codespace/.gnupg/pubring.kbx
 ----------------------------------
 pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
@@ -394,10 +394,10 @@ pub   rsa4096 2026-03-23 [SC] [expires: 2027-03-23]
 uid           [ unknown] Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com>
 sub   rsa4096 2026-03-23 [E] [expires: 2027-03-23]
 
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ echo "Hola Cami t amo" > doc_no_cifrado.txt # This comand create a file named doc_no_cifrado.txt with "Hola Cami t amo" 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ echo "Hola Cami t amo" > doc_no_cifrado.txt # This command create a file named doc_no_cifrado.txt with "Hola Cami t amo" 
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_no_cifrado.txt # With cat I can see the text in my file
 Hola Cami t amo
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_cifrado.txt --encrypt --recipient C0940405536BDA498D561C15BCE14E7DCA73AB9B doc_no_cifrado.txt # With this comand I encrypt the no encrypted file with the Cami's hash
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_cifrado.txt --encrypt --recipient C0940405536BDA498D561C15BCE14E7DCA73AB9B doc_no_cifrado.txt # With this command I encrypt the no encrypted file with the Cami's hash
 gpg: EC071FDE9F8261CE: There is no assurance this key belongs to the named user
 
 sub  rsa4096/EC071FDE9F8261CE 2026-03-23 Diana Camila Villagran Parrales (mi primera llave) <dianacamilux@gmail.com>
@@ -410,7 +410,7 @@ you may answer the next question with yes.
 
 Use this key anyway? (y/N) y
 
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_cifrado.txt # Now with this comand I can see the encrypted file and what it contains
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_cifrado.txt # Now with this command I can see the encrypted file and what it contains
 �
  �ޟ�a��IX�
 Am�&�gң�����Ds��ts,��e����*�)�R����!E����寈N.�G�\<`9��9�Ѻ�AVʔ�C<s2�����s�w�ql\|�: ��)�#4s�.1M���]�#��uF��R
@@ -418,13 +418,13 @@ Am�&�gң�����Ds��ts,��e����*�)�R����!E
 ���
 �_JL�(F�5*
 �Jocr�ܹ��* (M��^>?2`C�|c�*�R�?j��q���5�x ��������(���i�xr�!��eܟj�(�7`0~k�n�#�\��0=_�]n   ��M��R~�F���6=%��h/���5MSt����  �NSG����B�2����ֽ�گ1u��}�Mu�L��Zm�c�KP4��x�d~6f)��u?1�
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --decrypt marida_doc_cifrado.txt # After upolad the encrypted file that Cami send to me, with this comand I can decrypt her file with her public key and see their content 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --decrypt marida_doc_cifrado.txt # After upolad the encrypted file that Cami send to me, with this command I can decrypt her file with her public key and see their content 
 gpg: encrypted with rsa4096 key, ID AC240ACED367542D, created 2026-03-20
       "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>"
 Hola dannitaaaaaaaa
 
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt # With this comand I can sign my no encrypted file and I can have a new file signed with a new name 
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_no_cifrado_firmado.txt # With this comand I can see the content of my new file with my sign
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt # With this command I can sign my no encrypted file and I can have a new file signed with a new name 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_no_cifrado_firmado.txt # With this command I can see the content of my new file with my sign
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
@@ -445,11 +445,11 @@ pqHEWuawqIe4kfLS/fPDwX1C2KBXWlBIVhK+ckNY0RaoFlT5hyeyw4jPw4rVrIJW
 Hv9NdfWEjivvPGcziNIlvQY8PHGhbQUGck2cTsiiLRBfk0PDgTs=
 =aD+v
 -----END PGP SIGNATURE-----
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --import marida_llave_publica.asc # With this comand I'm adding Cami's new key for the next step
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --import marida_llave_publica.asc # With this command I'm adding Cami's new key for the next step
 gpg: key 2DB5E37DF317D30F: public key "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" imported
 gpg: Total number processed: 1
 gpg:               imported: 1
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys # With this comand I can see my key ring
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --list-keys # With this command I can see my key ring
 /home/codespace/.gnupg/pubring.kbx
 ----------------------------------
 pub   rsa4096 2026-03-20 [SC] [expires: 2027-03-20]
@@ -466,7 +466,7 @@ pub   rsa4096 2026-03-26 [SC] [expires: 2027-03-26]
       88A7487A82842216C00562222DB5E37DF317D30F
 uid           [ unknown] Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
 sub   rsa4096 2026-03-26 [E] [expires: 2027-03-26]
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify marida_doc_no_cifrado_firmado.txt # With this comand I can verify the sign in Cami's file
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify marida_doc_no_cifrado_firmado.txt # With this command I can verify the sign in Cami's file
 gpg: Signature made Thu Mar 26 01:42:35 2026 UTC
 gpg:                using RSA key 88A7487A82842216C00562222DB5E37DF317D30F
 gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" [unknown]
@@ -474,7 +474,7 @@ gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
 Primary key fingerprint: 88A7 487A 8284 2216 C005  6222 2DB5 E37D F317 D30F
 
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --edit-key 88A7487A82842216C00562222DB5E37DF317D30F # With this comand I can edit the trust level and I can change it to 4
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --edit-key 88A7487A82842216C00562222DB5E37DF317D30F # With this command I can edit the trust level and I can change it to 4
 
 gpg (GnuPG) 2.4.4; Copyright (C) 2024 g10 Code GmbH
 
@@ -550,7 +550,7 @@ unless you restart the program.
 
 gpg> q
 
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --sign-key 88A7487A82842216C00562222DB5E37DF317D30F # With this comand I can sign the key to prove my desicion 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --sign-key 88A7487A82842216C00562222DB5E37DF317D30F # With this command I can sign the key to prove my desicion 
 
 
 
@@ -607,9 +607,11 @@ gpg: Signature made Thu Mar 26 01:42:35 2026 UTC
 gpg:                using RSA key 88A7487A82842216C00562222DB5E37DF317D30F
 gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" [full]
 
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt # With this comand I can sign the document in binary format 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt # With this command I can sign the document in binary format 
 
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify marida_doc_no_cifrado_firmado_binario.txt # With this comand I can verify the new Cami's file in binary
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify marida_doc_no_cifrado_firmado_binario.txt # With this command I can verify the new Cami's file in binary
 gpg: Signature made Thu Mar 26 16:43:57 2026 UTC
 gpg:                using RSA key 88A7487A82842216C00562222DB5E37DF317D30F
 gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" [full]
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt # With this command I can create a new file but this one only have the sign
