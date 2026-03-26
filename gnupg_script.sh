@@ -629,3 +629,6 @@ gpg: encrypted with rsa4096 key, ID AC240ACED367542D, created 2026-03-20
 gpg: Signature made Thu Mar 26 17:35:33 2026 UTC
 gpg:                using RSA key 88A7487A82842216C00562222DB5E37DF317D30F
 gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" [full]
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_cifrado_y_firmado_descifrado_y_validado.txt # With this command I can finally see the content of doc_cifrado_y_firmado_descifrado_y_validado.txt 
+Hola dannitaaaaaaaa 
