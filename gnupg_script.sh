@@ -466,4 +466,10 @@ pub   rsa4096 2026-03-26 [SC] [expires: 2027-03-26]
       88A7487A82842216C00562222DB5E37DF317D30F
 uid           [ unknown] Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
 sub   rsa4096 2026-03-26 [E] [expires: 2027-03-26]
-
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify marida_doc_no_cifrado_firmado.txt # With this comand I can verify the sign in Cami's file
+gpg: Signature made Thu Mar 26 01:42:35 2026 UTC
+gpg:                using RSA key 88A7487A82842216C00562222DB5E37DF317D30F
+gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 88A7 487A 8284 2216 C005  6222 2DB5 E37D F317 D30F
