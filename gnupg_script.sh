@@ -473,3 +473,79 @@ gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
 Primary key fingerprint: 88A7 487A 8284 2216 C005  6222 2DB5 E37D F317 D30F
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --edit-key 88A7487A82842216C00562222DB5E37DF317D30F # With this comand I can edit the trust level and I can change it to 4
+
+gpg (GnuPG) 2.4.4; Copyright (C) 2024 g10 Code GmbH
+
+This is free software: you are free to change and redistribute it.
+
+There is NO WARRANTY, to the extent permitted by law.
+
+
+
+
+
+pub  rsa4096/2DB5E37DF317D30F
+
+     created: 2026-03-26  expires: 2027-03-26  usage: SC  
+
+     trust: full          validity: unknown
+
+sub  rsa4096/2B5ACECD7F399731
+
+     created: 2026-03-26  expires: 2027-03-26  usage: E   
+
+[ unknown] (1). Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
+
+
+
+gpg> trust
+
+pub  rsa4096/2DB5E37DF317D30F
+
+     created: 2026-03-26  expires: 2027-03-26  usage: SC  
+
+     trust: full          validity: unknown
+
+sub  rsa4096/2B5ACECD7F399731
+
+     created: 2026-03-26  expires: 2027-03-26  usage: E   
+
+[ unknown] (1). Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
+
+
+
+Please decide how far you trust this user to correctly verify other users' keys
+
+(by looking at passports, checking fingerprints from different sources, etc.)
+
+
+
+  1 = I don't know or won't say
+
+  2 = I do NOT trust
+
+  3 = I trust marginally
+
+  4 = I trust fully
+
+  5 = I trust ultimately
+
+  m = back to the main menu
+
+
+
+Your decision? 4
+Do you really want to set this key to full trust? (y/N) y
+
+pub  rsa4096/2DB5E37DF317D30F
+     created: 2026-03-26  expires: 2027-03-26  usage: SC  
+     trust: full      validity: full
+sub  rsa4096/2B5ACECD7F399731
+     created: 2026-03-26  expires: 2027-03-26  usage: E   
+[  full  ] (1). Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
+Please note that the shown key validity is not necessarily correct
+unless you restart the program.
+
+gpg> q
