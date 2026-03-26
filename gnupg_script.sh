@@ -615,3 +615,8 @@ gpg:                using RSA key 88A7487A82842216C00562222DB5E37DF317D30F
 gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" [full]
 
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt # With this command I can create a new file but this one only have the sign
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify marida_firma_separada_doc_no_cifrado.sig marida_doc_no_cifrado.txt # With this command I can verify Cami's sign and her no encrypted file 
+gpg: Signature made Thu Mar 26 16:55:56 2026 UTC
+gpg:                using RSA key 88A7487A82842216C00562222DB5E37DF317D30F
+gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" [full]
