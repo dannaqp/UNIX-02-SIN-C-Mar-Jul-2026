@@ -536,7 +536,7 @@ Please decide how far you trust this user to correctly verify other users' keys
 
 
 
-Your decision? 4
+Your decision? 4 # By putting 4 I am declaring that I have total confidence in the person to whom this signature belongs, not only from my own experience but also from external references.
 Do you really want to set this key to full trust? (y/N) y
 
 pub  rsa4096/2DB5E37DF317D30F
