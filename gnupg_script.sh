@@ -602,3 +602,7 @@ key "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaa
 
 Really sign? (y/N) y
 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --verify marida_doc_no_cifrado_firmado.txt # With this I can see the changes in that file and the trust for the signature
+gpg: Signature made Thu Mar 26 01:42:35 2026 UTC
+gpg:                using RSA key 88A7487A82842216C00562222DB5E37DF317D30F
+gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" [full]
