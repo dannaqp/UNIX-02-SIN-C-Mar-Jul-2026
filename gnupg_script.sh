@@ -620,3 +620,5 @@ gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux
 gpg: Signature made Thu Mar 26 16:55:56 2026 UTC
 gpg:                using RSA key 88A7487A82842216C00562222DB5E37DF317D30F
 gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>" [full]
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient 28140176FF2A98AD077AE20F1F0C857FC076602F doc_no_cifrado.txt # With this command I can create a new encrypted file with my sign 
