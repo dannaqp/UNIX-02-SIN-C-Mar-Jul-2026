@@ -541,7 +541,7 @@ Do you really want to set this key to full trust? (y/N) y
 
 pub  rsa4096/2DB5E37DF317D30F
      created: 2026-03-26  expires: 2027-03-26  usage: SC  
-     trust: full      validity: full
+     trust: full      validity: unknown
 sub  rsa4096/2B5ACECD7F399731
      created: 2026-03-26  expires: 2027-03-26  usage: E   
 [  full  ] (1). Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
@@ -549,3 +549,56 @@ Please note that the shown key validity is not necessarily correct
 unless you restart the program.
 
 gpg> q
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ gpg --sign-key 88A7487A82842216C00562222DB5E37DF317D30F # With this comand I can sign the key to prove my desicion 
+
+
+
+gpg: checking the trustdb
+
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+
+gpg: next trustdb check due at 2027-03-20
+
+pub  rsa4096/2DB5E37DF317D30F
+
+     created: 2026-03-26  expires: 2027-03-26  usage: SC  
+
+     trust: full          validity: unknown
+
+sub  rsa4096/2B5ACECD7F399731
+
+     created: 2026-03-26  expires: 2027-03-26  usage: E   
+
+[ unknown] (1). Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
+
+
+
+
+
+pub  rsa4096/2DB5E37DF317D30F
+
+     created: 2026-03-26  expires: 2027-03-26  usage: SC  
+
+     trust: full          validity: unknown
+
+ Primary key fingerprint: 88A7 487A 8284 2216 C005  6222 2DB5 E37D F317 D30F
+
+
+
+     Diana Camila Villagran Parrales (llavee) <dianacamilux@gmail.com>
+
+
+
+This key is due to expire on 2027-03-26.
+
+Are you sure that you want to sign this key with your
+
+key "DANNA ALEJANDRA SIMALUISA QUIZHPI (mi primera llave en la terminal) <dannaalejandra008@gmail.com>" (1F0C857FC076602F)
+
+
+
+Really sign? (y/N) y
+
