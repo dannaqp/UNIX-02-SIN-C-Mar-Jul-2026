@@ -552,7 +552,7 @@ Hola Cami tamo
 @dannaqp ➜ /home $ pwd # Print Working Directory
 /home
 
-@dannaqp ➜ / $ ls -F # Shows the files with their type
+@dannaqp ➜ / $ ls -F # Shows the files with their type / for directory, * for executable file and @ for symlink
 bin@                boot/  etc/  home/  lib.usr-is-merged/  lib64@  mnt/  proc/  run/   sbin.usr-is-merged/  sys/  usr/  vscode/
 bin.usr-is-merged/  dev/   go/   lib@   lib32@              media/  opt/  root/  sbin@  srv/                 tmp/  var/  workspaces/
 
@@ -560,3 +560,19 @@ bin.usr-is-merged/  dev/   go/   lib@   lib32@              media/  opt/  root/ 
  393223 bin                      1 dev   918514 home                397361 lib32   393416 mnt    806816 root   531391 sbin.usr-is-merged   262145 tmp  2069238 vscode
  528250 bin.usr-is-merged   714609 etc   393413 lib                 393414 lib64   918529 opt    681888 run    393427 srv                  918542 usr  1572867 workspaces
  393224 boot                682828 go    397360 lib.usr-is-merged   393415 media        1 proc   393426 sbin        1 sys                  918408 var
+
+@dannaqp ➜ / $ cd /workspaces # Change directory to workspaces directory
+@dannaqp ➜ /workspaces $ echo "Hola Camibu" > text.txt # Create a file with "Hola Camibu" as content
+@dannaqp ➜ /workspaces $ ls # List of files in workspaces
+UNIX-02-SIN-C-Mar-Jul-2026  text.txt
+@dannaqp ➜ /workspaces $ cat text.txt # Shows the content of test.txt
+Hola Camibu
+@dannaqp ➜ /workspaces $ stat text.txt # Shows the state of how it is stored test.txt 
+  File: text.txt
+  Size: 12              Blocks: 8          IO Block: 4096   regular file
+Device: 7,4     Inode: 1573148     Links: 1
+Access: (0666/-rw-rw-rw-)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+Access: 2026-03-27 15:54:09.122770649 +0000
+Modify: 2026-03-27 15:53:43.295771649 +0000
+Change: 2026-03-27 15:53:43.295771649 +0000
+ Birth: 2026-03-27 15:53:43.295771649 +0000
