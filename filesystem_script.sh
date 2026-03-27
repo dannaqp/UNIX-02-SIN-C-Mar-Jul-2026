@@ -548,3 +548,6 @@ Hola Cami tamo
 @dannaqp ➜ / $ cd /home # Change directory to home directory
 @dannaqp ➜ /home $ saludo_bin # Running my command in /home
 Hola Cami tamo
+
+@dannaqp ➜ /home $ pwd # Print Working Directory
+/home
