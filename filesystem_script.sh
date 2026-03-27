@@ -17,3 +17,72 @@ hpet             mqueue        sda14   tty0      tty24  tty4   tty55  ttyS12  tt
 hwrng            net           sda15   tty1      tty25  tty40  tty56  ttyS13  ttyS29  vcs          vcsu3
 input            null          sdb     tty10     tty26  tty41  tty57  ttyS14  ttyS3   vcs1         vcsu4
 kmsg             nvme-fabrics  sdb1    tty11     tty27  tty42  tty58  ttyS15  ttyS30  vcs2         vcsu5
+
+@dannaqp ➜ /dev $ cd /proc # Change directory to proc directory
+@dannaqp ➜ /proc $ ls # List of process in proc directory
+1      13665  21526       cmdline        execdomains  kcore          locks         partitions  sys                vmallocinfo
+121    13797  336         consoles       fb           key-users      mdstat        pressure    sysrq-trigger      vmstat
+12607  14627  513         cpuinfo        filesystems  keys           meminfo       schedstat   sysvipc            zoneinfo
+12692  14665  7           crypto         fs           kmsg           misc          scsi        thread-self
+12856  14926  acpi        devices        interrupts   kpagecgroup    modules       self        timer_list
+12866  21515  bootconfig  diskstats      iomem        kpagecount     mounts        slabinfo    tty
+12890  21520  buddyinfo   dma            ioports      kpageflags     mtrr          softirqs    uptime
+12938  21521  bus         driver         irq          latency_stats  net           stat        version
+13382  21524  cgroups     dynamic_debug  kallsyms     loadavg        pagetypeinfo  swaps       version_signature
+
+@dannaqp ➜ /proc $ cat cpuinfo # Shows cpu information
+processor       : 0
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3242.682
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves user_shstk clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
+bogomips        : 4890.85
+TLB size        : 2560 4K pages
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 48 bits physical, 48 bits virtual
+power management:
+
+processor       : 1
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3242.443
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 1
+initial apicid  : 1
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves user_shstk clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
+bogomips        : 4890.85
+TLB size        : 2560 4K pages
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 48 bits physical, 48 bits virtual
+power management:
