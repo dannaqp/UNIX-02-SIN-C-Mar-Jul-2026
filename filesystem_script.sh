@@ -543,3 +543,8 @@ h�����o���
 
 @dannaqp ➜ /bin $ saludo_bin # With this command I can execute my new command named saludo_bin
 Hola Cami tamo
+
+@dannaqp ➜ /bin $ cd / # Change directory to main directory
+@dannaqp ➜ / $ cd /home # Change directory to home directory
+@dannaqp ➜ /home $ saludo_bin # Running my command in /home
+Hola Cami tamo
