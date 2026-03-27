@@ -544,10 +544,19 @@ h�����o���
 @dannaqp ➜ /bin $ saludo_bin # With this command I can execute my new command named saludo_bin
 Hola Cami tamo
 
-@dannaqp ➜ /bin $ cd / # Change directory to main directory
+@dannaqp ➜ /bin $ cd / # Change directory to route
 @dannaqp ➜ / $ cd /home # Change directory to home directory
 @dannaqp ➜ /home $ saludo_bin # Running my command in /home
 Hola Cami tamo
 
 @dannaqp ➜ /home $ pwd # Print Working Directory
 /home
+
+@dannaqp ➜ / $ ls -F # Shows the files with their type
+bin@                boot/  etc/  home/  lib.usr-is-merged/  lib64@  mnt/  proc/  run/   sbin.usr-is-merged/  sys/  usr/  vscode/
+bin.usr-is-merged/  dev/   go/   lib@   lib32@              media/  opt/  root/  sbin@  srv/                 tmp/  var/  workspaces/
+
+@dannaqp ➜ / $ ls -i # Shows the file with their ID/inodo
+ 393223 bin                      1 dev   918514 home                397361 lib32   393416 mnt    806816 root   531391 sbin.usr-is-merged   262145 tmp  2069238 vscode
+ 528250 bin.usr-is-merged   714609 etc   393413 lib                 393414 lib64   918529 opt    681888 run    393427 srv                  918542 usr  1572867 workspaces
+ 393224 boot                682828 go    397360 lib.usr-is-merged   393415 media        1 proc   393426 sbin        1 sys                  918408 var
