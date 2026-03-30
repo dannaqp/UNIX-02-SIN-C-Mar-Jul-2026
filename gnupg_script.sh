@@ -632,3 +632,38 @@ gpg: Good signature from "Diana Camila Villagran Parrales (llavee) <dianacamilux
 
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (main) $ cat doc_cifrado_y_firmado_descifrado_y_validado.txt # With this command I can finally see the content of doc_cifrado_y_firmado_descifrado_y_validado.txt 
 Hola dannitaaaaaaaa 
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (FS_exploration) $ sudo apt update # With this command we can update (update) our libraries 
+Get:1 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease [3600 B]
+Get:2 https://dl.yarnpkg.com/debian stable InRelease                                                                                                  
+Get:3 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable InRelease [3961 B]                                    
+Get:4 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main all Packages [643 B]          
+Get:5 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:6 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main amd64 Packages [109 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]               
+Err:2 https://dl.yarnpkg.com/debian stable InRelease                                 
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 62D54FD4003F6525
+Get:8 https://repo.anaconda.com/pkgs/misc/debrepo/conda stable/main amd64 Packages [4557 B]
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]                             
+Get:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1504 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]              
+Get:15 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [3429 kB]  
+Get:16 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [2333 kB]          
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [38.1 kB] 
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [3601 kB]     
+Get:20 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [34.8 kB]   
+Get:21 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1954 kB]          
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2155 kB]      
+Get:23 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.5 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [695 B]
+Get:25 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [36.1 kB]
+Reading package lists... Done
+W: GPG error: https://dl.yarnpkg.com/debian stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 62D54FD4003F6525
+E: The repository 'https://dl.yarnpkg.com/debian stable InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+
