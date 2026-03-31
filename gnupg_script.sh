@@ -1396,3 +1396,67 @@ Setting up parted (3.6-4build1) ...
 Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
 Processing triggers for man-db (2.12.0-4build2) ...
 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (FS_exploration) $ sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e "\n---\n" # This command shows our partition table with parted we use our new tool (parted) and -l shows our partition table GPT/MBR lsblk shows UUIDs, disk structure and available space mount | grep It shows where each device is mounted -e interprets special characters and && runs the nest part of the command only if the previous one was succesful  
+Model: Msft Virtual Disk (scsi)
+Disk /dev/sda: 32.2GB
+Sector size (logical/physical): 512B/4096B
+Partition Table: gpt
+Disk Flags: 
+
+Number  Start   End     Size    File system  Name  Flags
+14      1049kB  5243kB  4194kB                     bios_grub
+15      5243kB  116MB   111MB   fat32              boot, esp
+ 1      116MB   32.2GB  32.1GB  ext4
+
+
+Model: Msft Virtual Disk (scsi)
+Disk /dev/sdb: 550GB
+Sector size (logical/physical): 512B/4096B
+Partition Table: gpt
+Disk Flags: 
+
+Number  Start   End    Size   File system  Name      Flags
+ 1      1049kB  550GB  550GB  ext4         ext4part
+
+
+Model: Msft Virtual Disk (scsi)
+Disk /dev/sdc: 48.3GB
+Sector size (logical/physical): 512B/4096B
+Partition Table: msdos
+Disk Flags: 
+
+Number  Start   End     Size    Type     File system  Flags
+ 1      1049kB  48.3GB  48.3GB  primary  ext4
+
+
+
+---
+
+NAME    FSTYPE FSVER LABEL UUID FSAVAIL FSUSE% MOUNTPOINTS
+loop0                                          
+loop1                                          
+loop2                                          
+loop3                                          
+loop4                             19.2G    34% /workspaces/.codespaces/.persistedshare
+                                               /home/vscode/.minikube
+                                               /var/lib/docker
+                                               /etc/hosts
+                                               /etc/hostname
+                                               /etc/resolv.conf
+                                               /workspaces
+loop5                                          
+loop6                                          
+sda                                            
+├─sda1                            12.1G    58% /workspaces/.codespaces/shared
+│                                              /.codespaces/bin
+│                                              /vscode
+│                                              /usr/sbin/docker-init
+├─sda14                                        
+└─sda15                                        
+sdb                                            
+└─sdb1                                         
+sdc                                            
+└─sdc1                            36.6G    12% /tmp
+sr0                                            
+
+---
