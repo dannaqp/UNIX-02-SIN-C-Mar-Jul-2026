@@ -1491,3 +1491,5 @@ sr0
 
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (FS_exploration) $ [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS" # This command I can verify that the file already exist, with [ I can start a test -d check if it's a directory /sys/firmware/efi is the route and ] is to end the test and we already know && means and || is the oposite && is true || is false
 BIOS
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (FS_exploration) $ echo "mi archivo" > clase.txt # With this command I can create a new .txt file named clase with "mi archivo" as content
