@@ -1460,3 +1460,31 @@ sdc
 sr0                                            
 
 ---
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (FS_exploration) $ lsblk -f # With this command I can see the complete patition table (shows the second part)
+NAME    FSTYPE FSVER LABEL UUID FSAVAIL FSUSE% MOUNTPOINTS
+loop0                                          
+loop1                                          
+loop2                                          
+loop3                                          
+loop4                             19.3G    33% /var/lib/docker
+                                               /home/vscode/.minikube
+                                               /workspaces/.codespaces/.persistedshare
+                                               /etc/hosts
+                                               /etc/hostname
+                                               /etc/resolv.conf
+                                               /workspaces
+loop5                                          
+loop6                                          
+sda                                            
+├─sda1                            12.6G    56% /workspaces/.codespaces/shared
+│                                              /.codespaces/bin
+│                                              /vscode
+│                                              /usr/sbin/docker-init
+├─sda14                                        
+└─sda15                                        
+sdb                                            
+└─sdb1                              39G     6% /tmp
+sdc                                            
+└─sdc1                                         
+sr0       
