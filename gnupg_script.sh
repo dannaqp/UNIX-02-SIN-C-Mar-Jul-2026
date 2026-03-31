@@ -1493,3 +1493,13 @@ sr0
 BIOS
 
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (FS_exploration) $ echo "mi archivo" > clase.txt # With this command I can create a new .txt file named clase with "mi archivo" as content
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (FS_exploration) $ stat clase.txt # With this command I can see the data in this file and how it is stored
+  File: clase.txt
+  Size: 11              Blocks: 8          IO Block: 4096   regular file
+Device: 7,4     Inode: 1573009     Links: 1
+Access: (0666/-rw-rw-rw-)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+Access: 2026-03-31 03:47:49.492061259 +0000
+Modify: 2026-03-31 03:46:24.645064883 +0000
+Change: 2026-03-31 03:46:24.645064883 +0000
+ Birth: 2026-03-31 03:46:24.645064883 +0000
