@@ -334,3 +334,7 @@ or available locally via: info '(coreutils) ls invocation'
 #  --depth <depth>
 #           Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless --no-single-branch is given to fetch the
 #           histories near the tips of all branches. If you want to clone submodules shallowly, also pass --shallow-submodules.
+
+total 164
+-rw-rw-rw-  1 codespace root      34523 Apr 17 14:08 LICENSE # the first group is the type of file, the second group shows permissions for user, next is permissions for group and the last is permissions for others
+
