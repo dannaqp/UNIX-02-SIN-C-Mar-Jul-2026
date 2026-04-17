@@ -171,3 +171,18 @@ drwxrwxrwx+ 2 codespace root      4.0K Apr 17 14:08 calculadora
 -rw-rw-rw-  1 codespace root       566 Apr 17 14:08 marida_firma_separada_doc_no_cifrado.sig
 -rw-rw-rw-  1 codespace root      3.2K Apr 17 14:08 marida_llave_publica.asc
 -rw-rw-rw-  1 codespace root      3.2K Apr 17 14:08 mi_llave_publica.asc
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ mkdir -- -rf # With this command we create an folder named -rf we use -- to use -rf as a name not an option
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls # To prove the changes
+-rf                  doc_cifrado.txt                                  doc_no_cifrado_firmado_binario.txt  marida_doc_no_cifrado.txt                  mi_llave_publica.asc
+LICENSE              doc_cifrado_y_firmado.txt                        firma_separada_doc_no_cifrado.sig   marida_doc_no_cifrado_firmado.txt
+README.md            doc_cifrado_y_firmado_descifrado_y_validado.txt  gnupg_script.sh                     marida_doc_no_cifrado_firmado_binario.txt
+boot_exploration.sh  doc_no_cifrado.txt                               marida_doc_cifrado.txt              marida_firma_separada_doc_no_cifrado.sig
+calculadora          doc_no_cifrado_firmado.txt                       marida_doc_cifrado_y_firmado.txt    marida_llave_publica.asc
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ rmdir -- -rf # With this command we remove -rf
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls # To prove the changes
+LICENSE              doc_cifrado_y_firmado.txt                        firma_separada_doc_no_cifrado.sig  marida_doc_no_cifrado_firmado.txt
+README.md            doc_cifrado_y_firmado_descifrado_y_validado.txt  gnupg_script.sh                    marida_doc_no_cifrado_firmado_binario.txt
+boot_exploration.sh  doc_no_cifrado.txt                               marida_doc_cifrado.txt             marida_firma_separada_doc_no_cifrado.sig
+calculadora          doc_no_cifrado_firmado.txt                       marida_doc_cifrado_y_firmado.txt   marida_llave_publica.asc
+doc_cifrado.txt      doc_no_cifrado_firmado_binario.txt               marida_doc_no_cifrado.txt          mi_llave_publica.asc
