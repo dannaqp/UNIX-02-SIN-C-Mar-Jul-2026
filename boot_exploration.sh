@@ -338,3 +338,70 @@ or available locally via: info '(coreutils) ls invocation'
 total 164
 -rw-rw-rw-  1 codespace root      34523 Apr 17 14:08 LICENSE # the first group is the type of file, the second group shows permissions for user, next is permissions for group and the last is permissions for others
 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch script.sh # To create a file 
+
+-rw-rw-rw-  1 codespace codespace     0 Apr 17 14:55 script.sh
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod +x script.sh # To give execute permissions to all (user, group and others)
+
+-rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod u+x script.sh # To give execute permissions to user only
+
+-rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch secreto.txt # To create secreto.txt
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod o-r secreto.txt # To remove permissions of read to others
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l
+total 168
+-rw-rw-rw-  1 codespace root      34523 Apr 17 14:08 LICENSE
+-rw-rw-rw-  1 codespace root         53 Apr 17 14:08 README.md
+-rw-rw-rw-  1 codespace codespace 25295 Apr 17 14:59 boot_exploration.sh
+drwxrwxrwx+ 2 codespace root       4096 Apr 17 14:08 calculadora
+-rw-rw-rw-  1 codespace root        632 Apr 17 14:08 doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1217 Apr 17 14:08 doc_cifrado_y_firmado.txt
+-rw-rw-rw-  1 codespace root         20 Apr 17 14:08 doc_cifrado_y_firmado_descifrado_y_validado.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:08 doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        898 Apr 17 14:08 doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:08 doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:08 firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root      35493 Apr 17 14:08 gnupg_script.sh
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:08 marida_doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1221 Apr 17 14:08 marida_doc_cifrado_y_firmado.txt
+-rw-rw-rw-  1 codespace root         20 Apr 17 14:08 marida_doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        902 Apr 17 14:08 marida_doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        634 Apr 17 14:08 marida_doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:08 marida_firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root       3194 Apr 17 14:08 marida_llave_publica.asc
+-rw-rw-rw-  1 codespace root       3236 Apr 17 14:08 mi_llave_publica.asc
+-rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh
+-rw-rw--w-  1 codespace codespace     0 Apr 17 14:59 secreto.txt
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch privado # To create privado
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod u+rw,go-rwx privado # To give read and write permmisions to users and remove read, write and execute permissions to groups and others
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l
+total 168
+-rw-rw-rw-  1 codespace root      34523 Apr 17 14:08 LICENSE
+-rw-rw-rw-  1 codespace root         53 Apr 17 14:08 README.md
+-rw-rw-rw-  1 codespace codespace 27299 Apr 17 15:00 boot_exploration.sh
+drwxrwxrwx+ 2 codespace root       4096 Apr 17 14:08 calculadora
+-rw-rw-rw-  1 codespace root        632 Apr 17 14:08 doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1217 Apr 17 14:08 doc_cifrado_y_firmado.txt
+-rw-rw-rw-  1 codespace root         20 Apr 17 14:08 doc_cifrado_y_firmado_descifrado_y_validado.txt
+-rw-rw-rw-  1 codespace root         16 Apr 17 14:08 doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        898 Apr 17 14:08 doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:08 doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:08 firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root      35493 Apr 17 14:08 gnupg_script.sh
+-rw-rw-rw-  1 codespace root        630 Apr 17 14:08 marida_doc_cifrado.txt
+-rw-rw-rw-  1 codespace root       1221 Apr 17 14:08 marida_doc_cifrado_y_firmado.txt
+-rw-rw-rw-  1 codespace root         20 Apr 17 14:08 marida_doc_no_cifrado.txt
+-rw-rw-rw-  1 codespace root        902 Apr 17 14:08 marida_doc_no_cifrado_firmado.txt
+-rw-rw-rw-  1 codespace root        634 Apr 17 14:08 marida_doc_no_cifrado_firmado_binario.txt
+-rw-rw-rw-  1 codespace root        566 Apr 17 14:08 marida_firma_separada_doc_no_cifrado.sig
+-rw-rw-rw-  1 codespace root       3194 Apr 17 14:08 marida_llave_publica.asc
+-rw-rw-rw-  1 codespace root       3236 Apr 17 14:08 mi_llave_publica.asc
+-rw-------  1 codespace codespace     0 Apr 17 15:00 privado
+-rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh
+-rw-rw--w-  1 codespace codespace     0 Apr 17 14:59 secreto.txt
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
