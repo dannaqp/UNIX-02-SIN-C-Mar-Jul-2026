@@ -329,3 +329,8 @@ Full documentation <https://www.gnu.org/software/coreutils/ls>
 or available locally via: info '(coreutils) ls invocation'
 
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ man ls # This command shows the entire manual of commands we can navegate here with / to type and we can put all and here we can move to the next with "n" and to the before page with "N" and to exit with q
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ man git-clone # With this command we can see the manual of git-clone and if we search with /--depth and navegate with n 2 times we can see:
+#  --depth <depth>
+#           Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless --no-single-branch is given to fetch the
+#           histories near the tips of all branches. If you want to clone submodules shallowly, also pass --shallow-submodules.
