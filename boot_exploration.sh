@@ -451,3 +451,34 @@ bash: ./hola.sh: Permission denied # We can see that hola.sh does not have execu
 -rwxrwxrwx 1 codespace codespace 34 Apr 20 15:04 hola.sh
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ./hola.sh # To execute hola.sh
 Hola Cami te amo
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls /etc # We don't need superuser because we're only reading
+ODBCDataSources         cloud                environment  host.conf      libnl-3        manpath.config  pam.d       rc6.d        subgid             update-motd.d
+PackageKit              credstore            ethertypes   hostname       lighttpd       mime.types      passwd      rcS.d        subgid-            vconsole.conf
+X11                     credstore.encrypted  fish         hosts          locale.alias   mke2fs.conf     passwd-     resolv.conf  subuid             vim
+adduser.conf            cron.d               fonts        hosts.allow    locale.conf    modules-load.d  perl        rmt          subuid-            wgetrc
+alternatives            cron.daily           fstab        hosts.deny     locale.gen     mtab            polkit-1    rpc          sudo.conf          xattr.conf
+apache2                 cron.weekly          gai.conf     init.d         localtime      mysql           profile     rvmrc        sudo_logsrvd.conf  xdg
+apparmor.d              csh.login            gdb          inputrc        logcheck       nanorc          profile.d   security     sudoers            xml
+apt                     dbus-1               gitconfig    iproute2       login.defs     netconfig       protocols   selinux      sudoers.d          zsh
+archivo_protegido       debconf.conf         gnutls       issue          logrotate.d    networks        python3     services     sysctl.conf
+bash.bashrc             debian_version       gprofng.rc   issue.net      lsb-release    nftables.conf   python3.12  sgml         sysctl.d
+bash_completion         debuginfod           groff        kernel         lynx           nsswitch.conf   rc0.d       shadow       systemd
+bash_completion.d       default              group        ld.so.cache    machine-id     odbc.ini        rc1.d       shadow-      terminfo
+bindresvport.blacklist  deluser.conf         group-       ld.so.conf     magic          odbcinst.ini    rc2.d       shells       timezone
+binfmt.d                dpkg                 gshadow      ld.so.conf.d   magic.mime     opt             rc3.d       skel         tmpfiles.d
+ca-certificates         e2scrub.conf         gshadow-     legal          mailcap        os-release      rc4.d       ssh          ucf.conf
+ca-certificates.conf    emacs                gss          libaudit.conf  mailcap.order  pam.conf        rc5.d       ssl          ufw
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch /etc/prueba.txt # This command hadn't work beacuse we are in /etc directory and we need superuser to do something
+touch: cannot touch '/etc/prueba.txt': Permission denied
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo touch/prueba.txt 
+sudo: touch/prueba.txt: command not found
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ mkdir ~/mi_carpeta # We don't need superuser because ~ is our home
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ apt install cowsay # We need superuser because we are trying to install packages in sistem directory 
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo apt install cowsay
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package cowsay
