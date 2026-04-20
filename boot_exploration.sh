@@ -482,3 +482,18 @@ Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
 E: Unable to locate package cowsay
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch prueba.txt # To create a new file named prueba.txt
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l prueba.txt # Shows the permissions of prueba.txt
+-rw-rw-rw- 1 codespace codespace 0 Apr 20 15:31 prueba.txt
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod 600 prueba.txt # Give read and write permissions to user and none to group and others 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l prueba.txt # Shows the permissions of prueba.txt
+-rw------- 1 codespace codespace 0 Apr 20 15:31 prueba.txt
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod 755 prueba.txt # Give read, write and execute permissions to user and give to group and others read and execute permissions
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l prueba.txt #  Shows the permissions of prueba.txt
+-rwxr-xr-x 1 codespace codespace 0 Apr 20 15:31 prueba.txt
+
+# Read = 4, Write = 2 and Execute = 1
+# read + write + execute = 7
+# read + write = 6
+# read + execute = 5
