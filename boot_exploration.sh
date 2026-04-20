@@ -407,3 +407,7 @@ drwxrwxrwx+ 2 codespace root       4096 Apr 17 14:08 calculadora
 
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo echo "hola" > /etc/archivo_protegido # This command hadn't work because super user only works in echo but no in > /etc/archivo_protegido
 bash: /etc/archivo_protegido: Permission denied
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "hola" | sudo tee /etc/archivo_protegido > /dev/null # With this command we execute echo as a normal user and with the pipe we put "hola" into /etc/archivo_protegido and using > /dev/null everything uses super user because of tee
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "hola" | sudo tee /etc/archivo_protegido # Without > /dev/null the command shows "hola" because with > /dev/null we prevent the echo output from appearing on the screen by using the /dev directory
+hola
