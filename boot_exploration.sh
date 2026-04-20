@@ -434,6 +434,20 @@ exit
 /home/codespace
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo '$HOME' # Shows a text, the string of caracters inside ' '
 $HOME
-
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "$BASH"
 /bin/bash
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo '#!/bin/sh' > hola.sh # With this command we put #!/bin/sh into hola.sh
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo 'echo "Hola Cami te amo"' >> hola.sh # With this command we can write echo "Hola Cami te amo" as a plain text and put into hola.sh 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ cat hola.sh # To see the content into hola.sh
+#!/bin/sh
+echo "Hola Cami te amo"
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ./hola.sh # To execute as hola.sh
+bash: ./hola.sh: Permission denied # We can see that hola.sh does not have execution permissions
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l hola.sh # See the permissions of hola.sh
+-rw-rw-rw- 1 codespace codespace 34 Apr 20 15:04 hola.sh
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ chmod +x hola.sh # Give execute permissions of hola.sh
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l hola.sh # To see the new permissions of hola.sh (with execute)
+-rwxrwxrwx 1 codespace codespace 34 Apr 20 15:04 hola.sh
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ./hola.sh # To execute hola.sh
+Hola Cami te amo
