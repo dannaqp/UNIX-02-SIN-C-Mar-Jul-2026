@@ -411,3 +411,10 @@ bash: /etc/archivo_protegido: Permission denied
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "hola" | sudo tee /etc/archivo_protegido > /dev/null # With this command we execute echo as a normal user and with the pipe we put "hola" into /etc/archivo_protegido and using > /dev/null everything uses super user because of tee
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "hola" | sudo tee /etc/archivo_protegido # Without > /dev/null the command shows "hola" because with > /dev/null we prevent the echo output from appearing on the screen by using the /dev directory
 hola
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ cat /etc/archivo_protegido # To see the content after our command
+hola
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo sh -c 'echo "chao" >> /etc/archivo_protegido' # Using super user in everything into ' ' in this case we use >> to put new content and not to re-write the file
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ cat /etc/archivo_protegido # To see the content after our command
+hola
+chao
