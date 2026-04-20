@@ -404,4 +404,6 @@ drwxrwxrwx+ 2 codespace root       4096 Apr 17 14:08 calculadora
 -rw-------  1 codespace codespace     0 Apr 17 15:00 privado
 -rwxrwxrwx  1 codespace codespace     0 Apr 17 14:55 script.sh
 -rw-rw--w-  1 codespace codespace     0 Apr 17 14:59 secreto.txt
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo echo "hola" > /etc/archivo_protegido # This command hadn't work because super user only works in echo but no in > /etc/archivo_protegido
+bash: /etc/archivo_protegido: Permission denied
