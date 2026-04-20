@@ -429,3 +429,11 @@ logout
 root ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ exit
 exit
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ 
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "$HOME" # Shows the route, the content inside " "
+/home/codespace
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo '$HOME' # Shows a text, the string of caracters inside ' '
+$HOME
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "$BASH"
+/bin/bash
