@@ -544,3 +544,20 @@ drwxr-x--- 2 codespace codespace  4096 Apr 27 15:23 directorio2
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l
 drwx------ 2 codespace codespace  4096 Apr 27 15:28 privadoumask
 -rw------- 1 codespace codespace     0 Apr 27 15:30 secretoumask.txt
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ whoami # Shows our user
+codespace
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ echo "HolaCami" > mi_archivo 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ cat mi_archivo
+HolaCami
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l mi_archivo
+-rw-r--r-- 1 codespace codespace 9 Apr 27 15:37 mi_archivo
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ useradd -m -s /usr/bin/zsh luna # We need super user
+useradd: Permission denied.
+useradd: cannot lock /etc/passwd; try again later.
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo useradd -m -s /usr/bin/zsh luna # Only super user can do this, to create a new user with a directory in home and with a shell zsh, our new user is luna
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls /home # Shows the new luna's directory
+codespace  luna  vscode
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo chown luna mi_archivo # Change the owner of mi_archivo to luna
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l mi_archivo # To view the changes
+-rw-r--r-- 1 luna codespace 9 Apr 27 15:37 mi_archivo
