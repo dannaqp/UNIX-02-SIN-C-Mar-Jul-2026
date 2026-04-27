@@ -497,3 +497,39 @@ E: Unable to locate package cowsay
 # read + write + execute = 7
 # read + write = 6
 # read + execute = 5
+
+# & es and
+# | or
+# ~ es not
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ umask
+0022
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch archivo1
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ mkdir directorio1 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo apt update
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo apt upgrade
+
+# AI isn't always useful, as in this case where it couldn't solve the problem of umask usage due to security issues implemented in codespaces. Human-level problem-solving, which is almost always more useful, should be analyzed, as we used Chuxel's resolution here, or forums like Stack Overflow can be used.
+# These problems can be registered on GitHub in the issues section, and by solving them you can make a name for yourself in the community; it can even help you get a job.
+# Chuxel solution
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo apt install acl 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  acl
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 39.4 kB of archives.
+After this operation, 197 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 acl amd64 2.3.2-1build1.1 [39.4 kB]
+Fetched 39.4 kB in 0s (102 kB/s)
+Selecting previously unselected package acl.
+(Reading database ... 58629 files and directories currently installed.)
+Preparing to unpack .../acl_2.3.2-1build1.1_amd64.deb ...
+Unpacking acl (2.3.2-1build1.1) ...
+Setting up acl (2.3.2-1build1.1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo chown -R $(whoami) .
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo setfacl -bnR
+Usage: setfacl [-bkndRLP] { -m|-M|-x|-X ... } file ...
+Try `setfacl --help' for more information.
