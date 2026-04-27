@@ -537,3 +537,10 @@ Processing triggers for man-db (2.12.0-4build2) ...
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l # shows the results 
 -rw-r----- 1 codespace codespace     0 Apr 27 15:23 archivo2
 drwxr-x--- 2 codespace codespace  4096 Apr 27 15:23 directorio2
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ umask 077 # Mask of generation 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch secretoumask.txt # 777 - 077 = 700
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ mkdir privadoumask # 666 - 077 = 600
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l
+drwx------ 2 codespace codespace  4096 Apr 27 15:28 privadoumask
+-rw------- 1 codespace codespace     0 Apr 27 15:30 secretoumask.txt
