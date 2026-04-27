@@ -512,7 +512,7 @@ E: Unable to locate package cowsay
 # AI isn't always useful, as in this case where it couldn't solve the problem of umask usage due to security issues implemented in codespaces. Human-level problem-solving, which is almost always more useful, should be analyzed, as we used Chuxel's resolution here, or forums like Stack Overflow can be used.
 # These problems can be registered on GitHub in the issues section, and by solving them you can make a name for yourself in the community; it can even help you get a job.
 # Chuxel solution
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo apt install acl 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo apt install acl # To install acl (Access Control Lists)
 Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
@@ -529,7 +529,11 @@ Preparing to unpack .../acl_2.3.2-1build1.1_amd64.deb ...
 Unpacking acl (2.3.2-1build1.1) ...
 Setting up acl (2.3.2-1build1.1) ...
 Processing triggers for man-db (2.12.0-4build2) ...
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo chown -R $(whoami) .
-@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo setfacl -bnR
-Usage: setfacl [-bkndRLP] { -m|-M|-x|-X ... } file ...
-Try `setfacl --help' for more information.
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo chown -R $(whoami) . # To change the owner with recursive in our current location
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ sudo setfacl -bnR .
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ umask 027 # Create a mask of generation 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ touch archivo2 # 777 - 027 = 750
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ mkdir directorio2 # 666 - 027 = 640
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (boot_exploration) $ ls -l # shows the results 
+-rw-r----- 1 codespace codespace     0 Apr 27 15:23 archivo2
+drwxr-x--- 2 codespace codespace  4096 Apr 27 15:23 directorio2
