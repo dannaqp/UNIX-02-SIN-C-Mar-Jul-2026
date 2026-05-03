@@ -88,3 +88,74 @@ What is it?  It's an elephant being eaten by a snake, of course.
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd . # Shortcuts: . always represents the current directory
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd ~ # Shortcuts: ~ always represents the current user's home directory
 @dannaqp ➜ ~ $ 
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls # Default of ls (list) 
+LICENSE                                          gnupg_script.sh
+README.md                                        marida_doc_cifrado.txt
+calculadora                                      marida_doc_cifrado_y_firmado.txt
+doc_cifrado.txt                                  marida_doc_no_cifrado.txt
+doc_cifrado_y_firmado.txt                        marida_doc_no_cifrado_firmado.txt
+doc_cifrado_y_firmado_descifrado_y_validado.txt  marida_doc_no_cifrado_firmado_binario.txt
+doc_no_cifrado.txt                               marida_firma_separada_doc_no_cifrado.sig
+doc_no_cifrado_firmado.txt                       marida_llave_publica.asc
+doc_no_cifrado_firmado_binario.txt               mi_llave_publica.asc
+firma_separada_doc_no_cifrado.sig                script_linux_cisco_1.sh
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -l /var/log/ # List of files in long format using /var/log/ as argument
+total 572
+lrwxrwxrwx 1 root root                39 Mar 11 11:59 README -> ../../usr/share/doc/systemd/README.logs
+-rw-r--r-- 1 root root             24519 Mar 11 12:19 alternatives.log
+drwxr-xr-x 1 root root              4096 Mar 11 12:17 apt
+-rw-r--r-- 1 root root             61229 Feb 10 14:05 bootstrap.log
+-rw-rw---- 1 root utmp                 0 Feb 10 14:05 btmp
+-rw-r--r-- 1 root root            481378 Mar 11 12:17 dpkg.log
+-rw-r--r-- 1 root root                 0 Feb 10 14:05 faillog
+-rw-r--r-- 1 root root               605 Mar 11 11:59 fontconfig.log
+drwxr-sr-x 2 root systemd-journal   4096 Mar 11 11:59 journal
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 lastlog
+drwx------ 2 root root              4096 Mar 11 11:59 private
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 wtmp
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -lt /var/log  # List of files in a long format and ordered by their timestamp using -t (timestamp)
+total 572
+-rw-r--r-- 1 root root             24519 Mar 11 12:19 alternatives.log
+-rw-r--r-- 1 root root            481378 Mar 11 12:17 dpkg.log
+drwxr-xr-x 1 root root              4096 Mar 11 12:17 apt
+-rw-r--r-- 1 root root               605 Mar 11 11:59 fontconfig.log
+lrwxrwxrwx 1 root root                39 Mar 11 11:59 README -> ../../usr/share/doc/systemd/README.logs
+drwxr-sr-x 2 root systemd-journal   4096 Mar 11 11:59 journal
+drwx------ 2 root root              4096 Mar 11 11:59 private
+-rw-r--r-- 1 root root             61229 Feb 10 14:05 bootstrap.log
+-rw-r--r-- 1 root root                 0 Feb 10 14:05 faillog
+-rw-rw---- 1 root utmp                 0 Feb 10 14:05 btmp
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 lastlog
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 wtmp
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -l -S /var/log  # List of files in a long format and ordered by file size using -s and /var/log as argument
+total 572
+-rw-r--r-- 1 root root            481378 Mar 11 12:17 dpkg.log
+-rw-r--r-- 1 root root             61229 Feb 10 14:05 bootstrap.log
+-rw-r--r-- 1 root root             24519 Mar 11 12:19 alternatives.log
+drwxr-xr-x 1 root root              4096 Mar 11 12:17 apt
+drwxr-sr-x 2 root systemd-journal   4096 Mar 11 11:59 journal
+drwx------ 2 root root              4096 Mar 11 11:59 private
+-rw-r--r-- 1 root root               605 Mar 11 11:59 fontconfig.log
+lrwxrwxrwx 1 root root                39 Mar 11 11:59 README -> ../../usr/share/doc/systemd/README.logs
+-rw-rw---- 1 root utmp                 0 Feb 10 14:05 btmp
+-rw-r--r-- 1 root root                 0 Feb 10 14:05 faillog
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 lastlog
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 wtmp
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -lSr /var/log # List of files in a long format, ordered by file size and reversing the order with -r using /var/log as argument
+total 572
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 wtmp
+-rw-rw-r-- 1 root utmp                 0 Feb 10 14:05 lastlog
+-rw-r--r-- 1 root root                 0 Feb 10 14:05 faillog
+-rw-rw---- 1 root utmp                 0 Feb 10 14:05 btmp
+lrwxrwxrwx 1 root root                39 Mar 11 11:59 README -> ../../usr/share/doc/systemd/README.logs
+-rw-r--r-- 1 root root               605 Mar 11 11:59 fontconfig.log
+drwx------ 2 root root              4096 Mar 11 11:59 private
+drwxr-sr-x 2 root systemd-journal   4096 Mar 11 11:59 journal
+drwxr-xr-x 1 root root              4096 Mar 11 12:17 apt
+-rw-r--r-- 1 root root             24519 Mar 11 12:19 alternatives.log
+-rw-r--r-- 1 root root             61229 Feb 10 14:05 bootstrap.log
+-rw-r--r-- 1 root root            481378 Mar 11 12:17 dpkg.log
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -r /var/log # List of files ordered on the reverse using -r (reverse)
+wtmp     lastlog  fontconfig.log  dpkg.log  bootstrap.log  alternatives.log
+private  journal  faillog         btmp      apt            README
