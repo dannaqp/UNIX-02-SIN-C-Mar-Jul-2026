@@ -190,3 +190,13 @@ doc_no_cifrado_firmado_binario.txt               mi_llave_publica.asc
 firma_separada_doc_no_cifrado.sig                script_linux_cisco_1.sh
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -l doc_no_cifrado.txt # List only doc_no_cifrado.txt in a long format
 -rw-rw-rw- 1 codespace root 16 May  3 07:06 doc_no_cifrado.txt 
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -l gnupg_script.sh # List only gnupg_script.sh
+-rw-rw-rw- 1 codespace root 35493 May  3 07:06 gnupg_script.sh
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ./gnupg_script.sh # Try to execute gnupg_script.sh from our current directory (./)
+bash: ./gnupg_script.sh: Permission denied
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ chmod u+x gnupg_script.sh # Give execute permissions to user in gnupg_script.sh with chmod (change access mode)
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -l gnupg_script.sh # Shows the new permissions
+-rwxrw-rw- 1 codespace root 35493 May  3 07:06 gnupg_script.sh
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ./gnupg_script.sh # Execute gnupg_script.sh
+13
