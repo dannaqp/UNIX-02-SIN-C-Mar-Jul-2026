@@ -275,3 +275,9 @@ doc_cifrado.txt                                  gnupg_script.sh                
 doc_cifrado_y_firmado.txt                        lol.py     # The result                         marida_llave_publica.asc
 doc_cifrado_y_firmado_descifrado_y_validado.txt  marida_doc_cifrado.txt              mi_llave_publica.asc
 doc_no_cifrado.txt                               marida_doc_cifrado_y_firmado.txt    script_linux_cisco_1.sh
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd ~ # Change directory to the principal directory
+@dannaqp ➜ ~ $ dd if=/dev/zero of=/tmp/swapex bs=1M count=50 # This command uses dd (Data Duplicator) to create a file named /tmp/swapex with 50 blocks of zeros, each one megabyte in size, using if (input file) to put the file to read, of (output file) to put the new file, bs (block size) to set the size of the block to be used and count to put the number of blocks to be read from the input file
+50+0 records in
+50+0 records out
+52428800 bytes (52 MB, 50 MiB) copied, 0.0393227 s, 1.3 GB/s
