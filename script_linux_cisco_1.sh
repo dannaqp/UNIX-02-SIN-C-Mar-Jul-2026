@@ -159,3 +159,20 @@ drwxr-xr-x 1 root root              4096 Mar 11 12:17 apt
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -r /var/log # List of files ordered on the reverse using -r (reverse)
 wtmp     lastlog  fontconfig.log  dpkg.log  bootstrap.log  alternatives.log
 private  journal  faillog         btmp      apt            README
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ su - # To log in with a different user, create a shell with that user and by default open the new shell as the root user
+Password: 
+root ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 $ exit # To logout from the root user
+logout
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ sl # Entertainment Command in netlab 
+bash: sl: command not found
+
+sysadmin@localhost:~$ sl    # Requires administrative access                                                    
+-bash: /usr/bin/sl: Permission denied 
+sysadmin@localhost:~$ su - # Login with root user                                                     
+Password:     
+root@localhost:~# sl # Execute the entertainment command                                                           
+root@localhost:~# exit # To logout from the root user                                         
+logout                                                                                                                                           
+sysadmin@localhost:~$ sudo sl # Execute sl with super user permissions                                     
+[sudo] password for sysadmin:                                                   
