@@ -73,3 +73,18 @@ What is it?  It's an elephant being eaten by a snake, of course.
 
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ pwd # This command print in the screen the current directory of working (print working directory)
 /workspaces/UNIX-02-SIN-C-Mar-Jul-2026
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd calculadora # This command is useful to change our directory cd (change directory) using calculadora as argument
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ cd / # Move root using / as argument
+@dannaqp ➜ / $ cd /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 # Absolute route: Change directory using /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 as argument 
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ pwd
+/workspaces/UNIX-02-SIN-C-Mar-Jul-2026
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd calculadora # Change directory to calculadora
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ cd / # Again to root
+@dannaqp ➜ / $ cd workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora # Relative route: Change directory using workspaces/UNIX-02-SIN-C-Mar-Jul-2026 as argument without / at the beginning
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ pwd
+/workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/calculadora (linux_cisco_1) $ cd .. # Shortcuts: .. always represents a parent directory relative to the current directory so with .. we can move to /workspaces/UNIX-02-SIN-C-Mar-Jul-2026
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd . # Shortcuts: . always represents the current directory
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cd ~ # Shortcuts: ~ always represents the current user's home directory
+@dannaqp ➜ ~ $ 
