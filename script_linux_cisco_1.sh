@@ -200,3 +200,8 @@ bash: ./gnupg_script.sh: Permission denied
 -rwxrw-rw- 1 codespace root 35493 May  3 07:06 gnupg_script.sh
 @dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ./gnupg_script.sh # Execute gnupg_script.sh
 13
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ sudo chown root gnupg_script.sh # Change the owner of gnupg_script.sh from codespace to root using chown (change owner) and sudo (super user)
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls -l gnupg_script.sh # Shows the new owner of gnupg_script.sh
+-rwxrw-rw- 1 root root 35493 May  3 07:06 gnupg_script.sh
+
