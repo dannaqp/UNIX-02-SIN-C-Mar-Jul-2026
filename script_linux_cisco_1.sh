@@ -70,3 +70,6 @@ sysadmin@localhost:~$ aptitude -vvv moo
 Stop it! 
 sysadmin@localhost:~$ aptitude -vvvvvvvvvvvvvvvvvvv moo # If we write more v the answer changes                     
 What is it?  It's an elephant being eaten by a snake, of course. 
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ pwd # This command print in the screen the current directory of working (print working directory)
+/workspaces/UNIX-02-SIN-C-Mar-Jul-2026
