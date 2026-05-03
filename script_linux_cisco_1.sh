@@ -263,3 +263,15 @@ pqHEWuawqIe4kfLS/fPDwX1C2KBXWlBIVhK+ckNY0RaoFlT5hyeyw4jPw4rVrIJW
 Hv9NdfWEjivvPGcziNIlvQY8PHGhbQUGck2cTsiiLRBfk0PDgTs=
 =aD+v
 -----END PGP SIGNATURE-----
+
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls calculadora # List of files in calculadora 
+__pycache__  app.py  lol.py  suma.py
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ cp calculadora/lol.py . # Copy lol.py from calculadora to our current directory using cp and calculadora/lol.py as option and . as destiny
+@dannaqp ➜ /workspaces/UNIX-02-SIN-C-Mar-Jul-2026 (linux_cisco_1) $ ls # List of files
+LICENSE                                          doc_no_cifrado_firmado.txt          marida_doc_no_cifrado.txt
+README.md                                        doc_no_cifrado_firmado_binario.txt  marida_doc_no_cifrado_firmado.txt
+calculadora                                      firma_separada_doc_no_cifrado.sig   marida_doc_no_cifrado_firmado_binario.txt
+doc_cifrado.txt                                  gnupg_script.sh                     marida_firma_separada_doc_no_cifrado.sig
+doc_cifrado_y_firmado.txt                        lol.py     # The result                         marida_llave_publica.asc
+doc_cifrado_y_firmado_descifrado_y_validado.txt  marida_doc_cifrado.txt              mi_llave_publica.asc
+doc_no_cifrado.txt                               marida_doc_cifrado_y_firmado.txt    script_linux_cisco_1.sh
