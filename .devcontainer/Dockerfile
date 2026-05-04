@@ -223,7 +223,7 @@ RUN chsh -s /usr/bin/zsh root
 
 RUN cat >> /root/.zshrc << 'EOF'
 
-RUN echo "PROMPT='%F{purple}{Danna-Simaluisa.✦ ݁˖}%f %F{cyan}%1~%f %(?.%F{green}✔.%F{red}✘ %?)%f %# '" > /root/.zshrc
+RUN echo "PROMPT='%F{135}[ Danna - Simaluisa ✦ ݁˖]%f %F{cyan}%1~%f %(?.%F{green}✔.%F{red}✘ %?)%f %# '" > /root/.zshrc
 
 SHELL ["/usr/bin/zsh", "-c"]
 CMD ["/usr/bin/zsh"]
