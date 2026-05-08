@@ -48,3 +48,20 @@ drwxrwxrwx+ 7 root root  4096 may  8 14:38 .git
 -rw-rw-rw-  1 root root    53 may  8 14:14 README.md
 -rw-rw-rw-  1 root root  1930 may  8 14:37 security.zsh
 -rw-rw-rw-  1 root root     0 may  8 14:39 test.txt # The files and directories they inherit gid (group identifier) and uid (user identifier)
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # cat /etc/group | head -10 Shows all the groups of the system (only the 10 first)
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # groups
+root
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # groups $USER # Is the same as groups
+root
