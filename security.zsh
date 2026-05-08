@@ -93,3 +93,13 @@ GID_MAX                 60000 # Group ID max
 #SYS_GID_MAX              999 # System group ID max
 SUB_GID_MIN                100000 # Subgroup ID min
 SUB_GID_MAX             600100000 # Subgroup ID max
+
+# Create the groups named diseno, marketing with 2100 as ID and cache_web (system group) and verify
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✘ 31 # addgroup diseno
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # addgroup --gid 2100 marketing 
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # addgroup --system cache_web  
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # grep "diseno\|marketing\|cache_web" /etc/group 
+diseno:x:1001:
+marketing:x:2100:
+cache_web:x:102:
+
