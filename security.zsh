@@ -35,3 +35,16 @@ man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
 lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
 mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
 news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # touch test.txt
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls -la
+total 68
+drwxrwxrwx+ 4 root root  4096 may  8 14:39 .
+drwxr-xrwx+ 4 root root  4096 may  8 14:14 ..
+drwxrwxrwx+ 2 root root  4096 may  8 14:14 .devcontainer
+drwxrwxrwx+ 7 root root  4096 may  8 14:38 .git
+-rw-rw-rw-  1 root root  4688 may  8 14:14 .gitignore
+-rw-rw-rw-  1 root root 34523 may  8 14:14 LICENSE
+-rw-rw-rw-  1 root root    53 may  8 14:14 README.md
+-rw-rw-rw-  1 root root  1930 may  8 14:37 security.zsh
+-rw-rw-rw-  1 root root     0 may  8 14:39 test.txt # The files and directories they inherit gid (group identifier) and uid (user identifier)
