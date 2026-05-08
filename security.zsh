@@ -103,3 +103,7 @@ diseno:x:1001:
 marketing:x:2100:
 cache_web:x:102:
 
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✘ 2 # usermod -aG desarrolladores root  # Add the group desarrolladores to the user root
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # usermod -aG diseno root  # Add the group diseno to the user root
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # id root # To verify
+uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno)
