@@ -86,3 +86,10 @@ desarrolladores:x:1000:
 operaciones:x:2000:
 servicios_web:x:995:
 
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs 
+GID_MIN                  1000 # Group ID min
+GID_MAX                 60000 # Group ID max
+#SYS_GID_MIN              101 # System group ID min
+#SYS_GID_MAX              999 # System group ID max
+SUB_GID_MIN                100000 # Subgroup ID min
+SUB_GID_MAX             600100000 # Subgroup ID max
