@@ -72,3 +72,17 @@ root
 0
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # id -G # Shows the ID of all groups
 0
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # mkdir ~/proyecto_unix/ # Create a directory named ~/proyecto_unix/
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls -la ~/proyecto_unix/ # Shows the permissions of ~/proyecto_unix/
+total 8
+drwxr-xr-x 2 root root 4096 may  8 15:06 .
+drwx------ 1 root root 4096 may  8 15:06 ..
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # groupadd desarrolladores # Create a group named desarrolladores
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # groupadd -g 2000 operaciones # Create a group named operaciones with the ID 2000
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # groupadd --system servicios_web # Create a system group named servicios_web with an ID < 1000
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # grep "desarrolladores\|operaciones\|servicios_web" /etc/group # Grep works as a filter and \ works as a traductor to pipline works different
+desarrolladores:x:1000:
+operaciones:x:2000:
+servicios_web:x:995:
+
