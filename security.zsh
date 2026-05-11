@@ -167,3 +167,20 @@ total 8
 drwxr-xr-x 2 root root   4096 may 11 14:58 .
 drwxr-xr-x 5 root root   4096 may 11 14:57 ..
 -rw-r--r-- 1 root diseno    0 may 11 14:58 informe.txt # Now the group of informe.txt is diseno
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # chgrp -R desarrolladores ~/lab_chgrp/scripts/ # Change the group from root to desarrolladores in scripts and uses -R to do it in a recursive way                  
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls -laR ~/lab_chgrp/scripts/  # To verify, now the group is desarrolladores  
+/root/lab_chgrp/scripts/:
+total 8
+drwxr-xr-x 2 root desarrolladores 4096 may 11 14:59 .
+drwxr-xr-x 5 root root            4096 may 11 14:57 ..
+-rw-r--r-- 1 root desarrolladores    0 may 11 14:59 deploy.sh
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # chgrp -Rv diseno ~/lab_chgrp/reportes/ # Change the group from root to diseno in scripts and uses -R to do it in a recursive way 
+el grupo de '/root/lab_chgrp/reportes/informe.txt' permanece como diseno
+cambiado el grupo de '/root/lab_chgrp/reportes/' de root a diseno
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls -laR ~/lab_chgrp/reportes/   # To verify, now the group is diseno      
+/root/lab_chgrp/reportes/:
+total 8
+drwxr-xr-x 2 root diseno 4096 may 11 14:58 .
+drwxr-xr-x 5 root root   4096 may 11 14:57 ..
+-rw-r--r-- 1 root diseno    0 may 11 14:58 informe.txt
