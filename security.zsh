@@ -130,3 +130,7 @@ uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno),2100(m
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # export USER=root # To storage root into $USER environment variable
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # id $USER to verify
 uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno),2100(marketing),2101(grupo_temporal)
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # usermod -G desarrolladores $USER # Replace the group desarrolladores to $USER and quit all the groups 
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # id $USER # To verify, now we only have desarrolladores 
+uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores)
