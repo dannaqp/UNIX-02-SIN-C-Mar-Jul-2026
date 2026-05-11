@@ -115,3 +115,9 @@ uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno)
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # grep "desarrolladores\|diseno" /etc/group # Gren is a filter and the \ change how | works
 desarrolladores:x:1000:root
 diseno:x:1001:root 
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # adduser root marketing # Add the group marketing to the root
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # id root # To verify        
+uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno),2100(marketing)
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # groups root # To verify
+root : root desarrolladores diseno marketing
