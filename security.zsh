@@ -107,3 +107,11 @@ cache_web:x:102:
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # usermod -aG diseno root  # Add the group diseno to the user root
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # id root # To verify
 uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno)
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # groups root # Shows the groups of the root
+root : root desarrolladores diseno
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # id root # Shows the groups with id
+uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno)
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # grep "desarrolladores\|diseno" /etc/group # Gren is a filter and the \ change how | works
+desarrolladores:x:1000:root
+diseno:x:1001:root 
