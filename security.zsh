@@ -138,3 +138,15 @@ uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores)
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # usermod -aG diseno,marketing,grupo_temporal $USER # Add with -a the groups diseno, marketing and grupo_temporal to $USER
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # id $USER # To verify, no we have diseno, marketing, grupo_temporal and desarrolladores as groups of $USER
 uid=0(root) gid=0(root) grupos=0(root),1000(desarrolladores),1001(diseno),2100(marketing),2101(grupo_temporal)
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls -la ~/lab_chgrp/proyectos/ # The group is root in lab_chgrp/proyectos/
+total 8
+drwxr-xr-x 2 root root 4096 may 11 14:58 .
+drwxr-xr-x 5 root root 4096 may 11 14:57 ..
+-rw-r--r-- 1 root root    0 may 11 14:58 app.py
+-rw-r--r-- 1 root root    0 may 11 14:58 config.json
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls -la ~/lab_chgrp/reportes/  # The group is root in lab_chgrp/reportes/
+total 8
+drwxr-xr-x 2 root root 4096 may 11 14:58 .
+drwxr-xr-x 5 root root 4096 may 11 14:57 ..
+-rw-r--r-- 1 root root    0 may 11 14:58 informe.txt
