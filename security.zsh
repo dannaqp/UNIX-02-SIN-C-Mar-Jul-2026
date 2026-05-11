@@ -150,3 +150,7 @@ total 8
 drwxr-xr-x 2 root root 4096 may 11 14:58 .
 drwxr-xr-x 5 root root 4096 may 11 14:57 ..
 -rw-r--r-- 1 root root    0 may 11 14:58 informe.txt
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # chgrp desarrolladores ~/lab_chgrp/proyectos/app.py # Change the group from root to desarrolladores
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls -la ~/lab_chgrp/proyectos/app.py # To verify
+-rw-r--r-- 1 root desarrolladores 0 may 11 14:58 /root/lab_chgrp/proyectos/app.py # Now the group of ~/lab_chgrp/proyectos/app.py is desarrolladores 
