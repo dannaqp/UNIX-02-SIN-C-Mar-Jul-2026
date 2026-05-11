@@ -154,3 +154,16 @@ drwxr-xr-x 5 root root 4096 may 11 14:57 ..
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # chgrp desarrolladores ~/lab_chgrp/proyectos/app.py # Change the group from root to desarrolladores
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls -la ~/lab_chgrp/proyectos/app.py # To verify
 -rw-r--r-- 1 root desarrolladores 0 may 11 14:58 /root/lab_chgrp/proyectos/app.py # Now the group of ~/lab_chgrp/proyectos/app.py is desarrolladores 
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # chgrp diseno ~/lab_chgrp/proyectos/config.json ~/lab_chgrp/reportes/informe.txt  # Change the group from root to diseno of files config.json and informe.txt
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls -la ~/lab_chgrp/proyectos/ # To verify                                        
+total 8
+drwxr-xr-x 2 root root            4096 may 11 14:58 .
+drwxr-xr-x 5 root root            4096 may 11 14:57 ..
+-rw-r--r-- 1 root desarrolladores    0 may 11 14:58 app.py
+-rw-r--r-- 1 root diseno             0 may 11 14:58 config.json # Now the group of config.json is diseno
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls -la ~/lab_chgrp/reportes/  # To verify                                                  
+total 8
+drwxr-xr-x 2 root root   4096 may 11 14:58 .
+drwxr-xr-x 5 root root   4096 may 11 14:57 ..
+-rw-r--r-- 1 root diseno    0 may 11 14:58 informe.txt # Now the group of informe.txt is diseno
