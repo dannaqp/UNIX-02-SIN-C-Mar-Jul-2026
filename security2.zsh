@@ -54,3 +54,12 @@ Procesando disparadores para libc-bin (2.42-16) ...
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # exit # Exit from the subshell 
 [ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # echo $$ # New PID from de principal shell
 960
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # newgrp desarrolladores # Use newgrp againg with desarrolladores
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # mkdir -p ~/proyecto_dev/src # Create a new directory with desarrolladores as group
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls -la ~/ # Shows the details and we can see desarrolladores as a group in our new file and our new directory
+total 56 # I only left in the script the outputs that were of interest to me to see the use of newgrp
+
+-rw-r--r-- 1 root desarrolladores    0 may 29 15:23 despues_de_newgrp.txt
+
+drwxr-xr-x 3 root desarrolladores 4096 may 29 15:41 proyecto_dev
