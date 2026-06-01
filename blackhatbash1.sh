@@ -1,5 +1,6 @@
 #!/bin/bash
 #!/usr/bin/env bash
+set -x
 
 bash --version
 
@@ -24,3 +25,9 @@ df --human-readable
 # chmod u+x blackhatbash1.sh
 
 # ./blackhatbash1.sh
+
+# bash -n blackhatbash1.sh
+
+# bash blackhatbash1.sh
+
+set +x
