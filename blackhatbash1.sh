@@ -1,11 +1,21 @@
-[Danna-Simaluisa ✦ ݁˖] ✓ $ bash --version
+#!/bin/bash
+#!/usr/bin/env bash
 
-[Danna-Simaluisa ✦ ݁˖] ✓ $ env
+bash --version
 
-[Danna-Simaluisa ✦ ݁˖] ✓ $ echo ${SHELL}
+env
 
-[Danna-Simaluisa ✦ ݁˖] ✓ $ echo ${RANDOM}
+echo ${SHELL}
 
-[Danna-Simaluisa ✦ ݁˖] ✓ $ echo ${UID}
+echo ${RANDOM}
 
-[Danna-Simaluisa ✦ ݁˖] ✓ $ echo ${OSTYPE}
+echo ${UID}
+
+echo ${OSTYPE}
+
+ps -e -f
+
+df --human-readable
+
+# bash -x blackhatbash1.sh
+# bash -r blackhatbash1.sh
