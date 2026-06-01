@@ -18,4 +18,9 @@ ps -e -f
 df --human-readable
 
 # bash -x blackhatbash1.sh
+
 # bash -r blackhatbash1.sh
+
+# chmod u+x blackhatbash1.sh
+
+# ./blackhatbash1.sh
