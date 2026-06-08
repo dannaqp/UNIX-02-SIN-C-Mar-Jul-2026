@@ -63,3 +63,48 @@ total 56 # I only left in the script the outputs that were of interest to me to 
 -rw-r--r-- 1 root desarrolladores    0 may 29 15:23 despues_de_newgrp.txt
 
 drwxr-xr-x 3 root desarrolladores 4096 may 29 15:41 proyecto_dev
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # groupadd grupo_restringido # Create the restricted group
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # gpasswd grupo_restringido # To put the password ( pswd: 12345678 to not forget :) )
+
+# Now, to test the creation of this group with a password, we create a new user without administrator privileges named moon
+
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # adduser moon
+Nueva contraseña: 
+Vuelva a escribir la nueva contraseña: 
+passwd: contraseña actualizada correctamente
+Cambiando la información de usuario para moon
+Introduzca el nuevo valor, o pulse INTRO para usar el valor predeterminado
+        Nombre completo []: DANNA
+        Número de habitación []: 18
+        Teléfono del trabajo []: 0999999
+        Teléfono de casa []: 23888888
+        Otro []: jiji
+Is the information correct? [Y/n] Y
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # ls /home
+moon # Here is our new user
+[ Danna - Simaluisa ✦ ݁˖] UNIX-02-SIN-C-Mar-Jul-2026 ✔ # su - moon # To change from root to moon
+┏━(Message from Kali developers)
+┃
+┃ This is a minimal installation of Kali Linux, you likely
+┃ want to install supplementary tools. Learn how:
+┃ ⇒ https://www.kali.org/docs/troubleshooting/common-minimum-setup/
+┃
+┗━(Run: “touch ~/.hushlogin” to hide this message)
+┌──(moon㉿codespaces-a7fd23)-[/workspaces/UNIX-02-SIN-C-Mar-Jul-2026]
+└─$ groups
+moon users
+
+┌──(moon㉿codespaces-a7fd23)-[/workspaces/UNIX-02-SIN-C-Mar-Jul-2026] # Use newgrp to test the group with password
+└─$ newgrp grupo_restringido
+Password: # It asks us for a password
+┌──(moon㉿codespaces-a7fd23)-[/workspaces/UNIX-02-SIN-C-Mar-Jul-2026]
+└─$ id -gn 
+grupo_restringido # Now we are in grupo_restringido temporarily
+┌──(moon㉿codespaces-a7fd23)-[/workspaces/UNIX-02-SIN-C-Mar-Jul-2026]
+└─$ exit # With this we get out of grupo restringido 
+exit
+
+┌──(moon㉿codespaces-a7fd23)-[/workspaces/UNIX-02-SIN-C-Mar-Jul-2026]
+└─$ id -gn
+moon # Now moon is not in grupo_restringido
