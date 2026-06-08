@@ -61,6 +61,8 @@ ENV DEBIAN_FRONTEND=noninteractive \
 # normales (no-root) deben poder capturar paquetes. Como en el contenedor
 # siempre somos root, respondemos "false" POR ADELANTADO usando
 # debconf-set-selections para que no detenga el build esperando input.
+#
+# Uses echo to output text to stdout, and pipeline | redirects it as stdin for debconf and the backslash / to continue in the next line
 RUN echo "wireshark-common wireshark-common/install-setuid boolean false" \
     | debconf-set-selections
 
@@ -76,13 +78,16 @@ RUN echo "wireshark-common wireshark-common/install-setuid boolean false" \
 #     --no-install-recommends -> instala SOLO lo esencial (no los extras
 #                                sugeridos). Ahorra cientos de MB.
 #
-# ¿Por qué un solo RUN gigante y no 10 RUN pequeños?
+# ¿Por qué un solo RUN gigante and no 10 RUN pequeños?
 # Porque CADA RUN crea una capa nueva en la imagen. Menos capas = imagen
 # más pequeña, más rápida de construir y de descargar.
 #
 # El "&&" encadena comandos: ejecuta el siguiente SOLO SI el anterior
 # terminó bien. Si algo falla, el build se detiene con error (que es lo
 # que queremos: mejor un error claro que una imagen rota).
+#
+# The && operator chains commands to run sequentially if exit status is 0
+# The backslash \ acts as an escape character to split a long command across multiple lines
 RUN apt-get update && apt-get install -y --no-install-recommends \
     \
     # === Editores de texto y shells (intérpretes de comandos) ===
@@ -171,13 +176,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  # --- Después de instalar, activamos el idioma español ---
  # sed busca "# es_ES.UTF-8" en /etc/locale.gen y le quita el "#" para
  # activar esa línea. Luego locale-gen compila los archivos de idioma.
+ # Uses sed -i to modify /etc/locale.gen in-place, removing '#' to activate the language uses the && operator and \ to continue in the next line
  && sed -i 's/# es_ES.UTF-8/es_ES.UTF-8/' /etc/locale.gen \
  && locale-gen \
- \
+  \
  # --- Limpieza final: reducir el tamaño de la imagen ---
  # apt deja archivos de caché que ya no necesitamos después de instalar.
  # Borrarlos aquí (en el mismo RUN) hace la capa final más pequeña.
  # Si los borráramos en otro RUN, seguirían ocupando en la capa anterior.
+ # Uses apt-get clean and rm -rf with the && operator to clear download caches inside the layer and again uses && operaton and the backslash \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
@@ -218,19 +225,29 @@ RUN git config --system --add safe.directory '*' \
 # propia terminal integrada de VS Code, pero es buena práctica dejarla
 # definida para que la imagen sea usable también con Docker puro.
 # Prompt del curso para bash
+#
+# Uses cat with append redirection >> to safely add text to the end of .bashrc
+# Uses a Here Document EOF with single quotes around EOF to treat the block as literal text
 RUN cat >> /root/.bashrc <<'EOF'
 
 # ===== Prompt del curso =====
 __set_prompt() {
+    # Uses 'local' to scope variables only inside this function
+    # Instantly saves the exit status code of the last command using the special '$?' variable
     local ec=$?
     local mark
+    
+    # Evaluates the exit status code: 0 means success (green check), otherwise it failed (red cross and error number)
     if [ $ec -eq 0 ]; then
         mark='\[\e[32m\]✓\[\e[0m\]'
     else
         mark="\[\e[31m\]✗ $ec\[\e[0m\]"
     fi
+    # Modifies the global PS1 environment variable to change the prompt string
     PS1="\[\e[35m\][Danna-Simaluisa ✦ ݁˖]\[\e[0m\] $mark \$ "
 }
+# PROMPT_COMMAND executes our function right before drawing the prompt on the screen
 PROMPT_COMMAND=__set_prompt
-EOF
+EOF 
+# End of the block with EOF
 CMD ["/bin/bash"]
