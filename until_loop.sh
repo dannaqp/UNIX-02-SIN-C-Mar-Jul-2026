@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE="output.txt" # We set the global variable FILE to contain output.txt
+FILE="outpit.txt" # We set the global variable FILE to contain output.txt
 touch "${FILE}" # The output.txt file is created using touch and the FILE variable.
 until [[ -s "${FILE}" ]]; do # until FILE has more than 0 bits it executes
  echo "${FILE} is empty..." # Print using the global variable file
