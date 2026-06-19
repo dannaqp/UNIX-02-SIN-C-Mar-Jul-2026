@@ -22,3 +22,5 @@ awk 'NR < 10' log.txt
 grep "42.236.10.117" log.txt # Filters using "42.236.10.117" as an argument so it shows the lines that contain the chosen IP of log.txt
 awk '{print $7}' log.txt # Print column 7 of the log.txt file
 grep "42.236.10.117" log.txt | awk '{print $7}' # Filter those that contain that IP ("42.236.10.117") and also print only column 7 of these lines
+sed 's/Mozilla/Godzilla/g' log.txt
+sed 's/Mozilla/Godzilla/g' log.txt > newlog.txt
